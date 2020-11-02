@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Technical Assessment</h1>
+        <h2 class="display-4">Senior Developer</h2>
+
+        <div>
+            <h3>Requirements Overview</h3>
+            <p>
+                Create a solution that allows a user to upload and download documents to a web server using their default browser.
+            </p>
+            <p>
+                The user must be able to see a list of documents that are currently on the server. The list should contain the file name, file size and 2 custom properties associated to a document:
+            </p>
+            <ul>
+                <li>Category (string)</li>
+                <li>Last Reviewed (datetime)</li>
+            </ul>
+            <p>
+                The user must be allowed to upload a new document (one file at a time only) and specify the values of the 2 custom properties.
+            </p>
+            <p>
+                The user should also be able to download a document by clicking on the file name.
+            </p>
+            <p>
+                No delete or editing of documents will be required for this assessment.
+            </p>
+        </div>
+        <h3>Technical Notes</h3>
+        <p>
+            For the server side, please use C# with EF (code first) using the FileContextCore or an in-memory database provider. The solution should compile in VS2019.
+        </p>
+        <p>
+            Use your name for the blob container name.
+        </p>
+        <p>
+            You can design your own user interface using HTML/JS/CSS, React, Angular, or any JavaScript framework of your choice. We realize this is not an assessment for a graphic designer, but we do expect a neat and functional interface.
+        </p>
+        <p>
+            Authentication is not required between the WebUI and API projects.
+        </p>
+    </div>
